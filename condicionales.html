@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicionales</title>
+</head>
+<body>
+    <script>
+        /*var edad;
+        var nombre;
+
+        nombre= prompt("ingrese su nombre");
+        edad= prompt("ingrese su edad");
+
+        if (edad >= 18)
+        
+            alert(nombre + " " + "vez a buscar trabajo");
+        else if(edad<18)
+            alert( nombre + " " + "vez a estudiar");*/
+
+        var carrera;
+        var afinidad;
+        var nombre;
+        var r;
+
+        r = prompt("cantidad de repeticiones");
+ 
+        for(i= 1 ; i <= r ; i++){
+
+                nombre= prompt("Escribe tu nombre");
+                carrera= prompt("que carrera estudia");
+                afinidad= prompt("te gusta tu carrera, Responde con SI o con NO");
+                switch(afinidad)
+            {
+                case afinidad =("si"):
+                    document.write(nombre + " " + "sigue asi");
+                    document.write("<br>")
+                break;
+
+                case afinidad= ("no"):
+                    document.write(nombre + " " + "estas mal");
+                    document.write("<br>")
+                break;
+
+                default:
+                    document.write("no podemos proseguir opcion inavalida");
+                    document.write("<br>")
+                break;    
+
+            }
+        }
+        
+        
+    </script>
+</body>
+</html>
