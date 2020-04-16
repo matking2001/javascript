@@ -1,0 +1,39 @@
+body{
+    background: burlywood;
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    display: block;
+    margin: 0 auto;
+    width: 365px;
+}
+img{
+  margin-top: 80px;
+  margin-left: -24px;
+}
+.e1,.e2{
+    background: blue;
+    display: block;
+    height: 100px;
+    margin: 20px auto;
+    width: 400px;
+}
+.e1{
+    background: orange;
+    height: 150px;
+}
+
+.e2{
+    padding: 15px;
+    border-radius: 50px 0 50px 0;
+}
+p{
+    margin-left: 10px;
+    
+}
+
+h1{
+    text-align: center;
+}
