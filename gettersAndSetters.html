@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getters and Setters</title>
+    <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+    <script>
+
+        $(document).on("ready", function(){
+            var almacen = $(".parrafo").attr("class")
+
+           
+        })
+
+        
+    </script>
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    #parrafo{
+        width: 450px;
+        height: 450px;
+        background-color:red;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .h1{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .label{
+        width: 50%;
+        height: 20px;
+        display: block;
+        margin-left: 45%;
+        font-size: 15px;
+        margin-top: 10px;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .input{
+        width: 50%;
+        height: 40px;
+        display: block;
+        margin-left: 25%;
+        border-radius: 10px 10px 10px 10px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .boton{
+        
+        width: 100px;
+        height: 30px;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 80px;
+        background-color: blanchedalmond;
+        border: 1px solid black;
+        font-size: 10px;
+        color: black;
+    
+    }
+    </style>
+
+</head>
+<body>
+
+    <p class="parrafo">
+        <div id="parrafo">
+            <h1 class="h1">Suma</h1>
+            <label class="label" for="">Número 1</label>
+            <input id="num1" class="input" type="text">
+            <label class="label" for="">Número 2</label>
+            <input id="num2" class="input" type="text">
+            <label class="label" for="">Número 3</label>
+            <input id="num3" class="input" type="text">
+            <label class="label" for="">resultado</label>
+            <input id="resultado" class="input" type="text" readonly>
+            <input type="button" class= "boton" onclick="promediar()" value="promediar">
+            <input type="button" class= "boton" onclick="limpiar()" value="limpiar"> 
+        </div>
+    </p>
+
+    <script>
+        function promediar(){
+            var a = parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+            var c = parseInt(document.getElementById("num3").value);
+            var r = (a + b + c);
+            var re = (r / 3);
+            document.getElementById("resultado").value=re;
+
+        }
+
+        function limpiar(){
+            a = document.getElementById("num1").value = " ";
+            b = document.getElementById("num2").value = " ";
+            c = document.getElementById("num3").value = " ";
+            r = document.getElementById("resultado").value = " ";
+        }
+
+    </script>
+    
+</body>
+</html>
