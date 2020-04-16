@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attr</title>
+
+    <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+    <script>
+        $(document).on("ready", function(){
+            $(".color").click(function(){
+                var doc = $(this);
+
+                    if("negro"==$(doc).attr("title")){
+                        $("body").css("background","black");
+                            $(".color").css("color","white");
+                                $(".container").css("background","black");
+                                    $("#fuente:hover").css("color","blue");
+                    }
+                        else if("azul" == $(doc).attr("title")){
+                            $("body").css("background","blue");
+                                $(".color").css("color","white");
+                                    $(".container").css("background","blue");
+                                        $("#fuente:hover").css("color","orangered");
+                        }
+                            else if("rojo"==$(doc).attr("title")){
+                                $("body").css("background","red");
+                                    $(".color").css("color","white");
+                                        $(".container").css("background","red");
+                                            $("#fuente:hover").css("color","blue");
+                            }
+            })
+        })
+    </script>
+
+    <style>
+        .container{
+            height: 70px;
+            width: 400px;
+            border: 5px solid white;
+            border-radius:  5px 5px 5px 5px;
+            background-color: rgba(233, 214, 43, 0.623);
+            margin: auto;
+            margin-top: 20%;
+        }
+
+        #fuente{
+            font-size: 30px;
+            font-style: italic;
+            color: red;
+            margin-left: 1px;
+            padding: 30px;
+            text-decoration: none;
+            
+        }
+
+        .container:hover{
+            background-color: rgb(67, 181, 196);
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="#" id="fuente" class="color" title="negro">Negro</a>
+        <a href="#" id="fuente" class="color" title="azul">Azul</a>
+        <a href="#" id="fuente" class="color" title="rojo">Rojo</a>
+    </div>
+    
+</body>
+</html>
